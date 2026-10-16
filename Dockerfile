@@ -18,7 +18,7 @@ COPY . .
 RUN make build_linux
 
 # Create a minimal runtime image
-FROM --platform=$TARGETPLATFORM alpine:3.19 AS runtime
+FROM --platform=$TARGETPLATFORM alpine:3 AS runtime
 
 # Install CA certificates for HTTPS requests
 RUN apk add --no-cache ca-certificates tzdata
