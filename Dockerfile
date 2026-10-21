@@ -105,6 +105,7 @@ ENV DB_TYPE="mmdb"
 # ENV DB_PASS=""
 # ENV DB_NAME=""
 # ENV DB_SCHEMA="" # used for postgres/sqlite
+ENV SSL_MODE="disable"
 
 # Command to run the entrypoint script that will generate .env and start the app
 CMD ["/app/entrypoint.sh"]
